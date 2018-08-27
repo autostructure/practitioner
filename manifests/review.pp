@@ -2,6 +2,7 @@
 class practitioner::review (
   $user = 'review',
   ){
+    include practitioner::motd,
     $homedir = $user?{
       'root'     => '/root',
       default    => "/home/${user}",
