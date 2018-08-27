@@ -1,3 +1,1 @@
-#This template manages the MOTD stuff
-Welcome to <%= $fqdn %>
-Hello, my name is Clark Kent
+Welcome to <%= $fqdn %>, your current ip address is <%= $ip %>
