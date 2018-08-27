@@ -5,6 +5,6 @@ class practitioner::motd {
     owner   => 'root',
     group   => 'root',
     mode    => '0644',
-    content => epp['practitioner/motd.epp'],
+    content => epp('practitioner/motd.epp'),
     }
 }
