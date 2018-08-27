@@ -11,15 +11,15 @@ class practitioner::review (
       shell      => '/bin/bash',
       managehome => true,
     }
-    file {"${homedir}/.bashrc":
-      ensure => file,
-      owner  => $user,
-      group  => $name,
-      mode   => '0644',
-      source => 'puppet:///modules/review/bashrc',
-}
-service { 'puppet':
-  ensure => stopped,
-  enable => false,
-}
+#     file {"${homedir}/.bashrc":
+#       ensure => file,
+#       owner  => $user,
+#       group  => $name,
+#       mode   => '0644',
+#       source => 'puppet:///modules/review/bashrc',
+# }
+# service { 'puppet':
+#   ensure => stopped,
+#   enable => false,
+# }
 }
