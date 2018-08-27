@@ -1,0 +1,2 @@
+Hello, you are <%= $facts['fqdn'] %>
+<%# Click on node in master to see possible facts %>
