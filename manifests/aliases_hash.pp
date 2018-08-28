@@ -1,4 +1,4 @@
 #doood
-class { 'system::aliases':
+class { 'practitioner::aliases':
 admin => {'first': 'jim', 'second': 'bo'},
 }

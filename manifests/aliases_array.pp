@@ -1,4 +1,4 @@
 # bruh
-class { 'system::aliases':
+class { 'practitioner::aliases':
 admin => ['an', 'array', 'of', 'names'],
 }

@@ -20,7 +20,7 @@ exec { '/usr/bin/newaliases':
 user { 'admin':
 ensure => present,
 }
-class { 'system::aliases':
+class { 'practitioner::aliases':
 admin   => 'admin',
 require => User['admin'],
 }
