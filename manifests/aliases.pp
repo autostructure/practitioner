@@ -5,6 +5,8 @@ class practitioner::aliases (
   if $admin !~ String {
     fail('The admin parameter needs to be a string!')
   }
+  admin => 'admin',
+  require => User['Admin'],
     # uses $admin to build the aliases file
 file { '/etc/aliases':
 ensure  => file,
@@ -20,9 +22,4 @@ exec { '/usr/bin/newaliases':
 user { 'admin':
 ensure => present,
 }
-class { 'practitioner::aliases':
-admin   => 'admin',
-require => User['admin'],
-}
-
 }
