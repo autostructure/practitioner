@@ -8,7 +8,4 @@ class practitioner::classroom {
 }
 # collect all exported resources and realize them on this host
 Host<<| tag == 'classroom' |>>
-  resources { 'host':
-  purge => true,
-}
 }
