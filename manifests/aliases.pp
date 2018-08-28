@@ -1,5 +1,5 @@
 # This manages the aliases class
-class system::aliases (
+class practitioner::aliases (
   $admin = 'root',
 ){
   if $admin !~ String {
@@ -11,7 +11,7 @@ ensure  => file,
 owner   => 'root',
 group   => 'root',
 mode    => '0644',
-content => epp('system/aliases.epp', { admin => $admin }),
+content => epp('practitioner/aliases.epp', { admin => $admin }),
 }
 exec { '/usr/bin/newaliases':
   refreshonly => true,

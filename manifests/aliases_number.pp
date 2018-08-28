@@ -1,4 +1,4 @@
 #turtle
-class { 'system::aliases':
+class { 'practitioner::aliases':
 admin => 17,
 }
