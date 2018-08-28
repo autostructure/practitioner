@@ -1,6 +1,6 @@
 #google
 class practitioner::kerberos {
-  file {'chron.allow':
+  file {'/etc/chron.allow':
     ensure  => present,
   }
   augeas {'krb5.conf':
