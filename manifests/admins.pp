@@ -10,14 +10,14 @@ class practitioner::admins {
     'zack'   => { max_queries_per_hour => '1200'},
   }
   $admins.each |$user| {
-    user {$user:
+    user { $user:
       ensure => present,
     }
     mysql_user { "${user}@localhost":
       ensure => present,
     }
   }
-    user {$fired:
+    user { $fired:
       ensure => absent,
     }
 }
