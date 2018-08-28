@@ -18,7 +18,7 @@ mode  => '0644',
 concat::fragment { 'motd header':
 target  => '/etc/motd',
 order   => '01',
-content => epp('files/motd_header.epp'),
+content => epp('practitioner/motd_header.epp'),
 }
 concat::fragment { 'sample motd message':
 target  => '/etc/motd',
