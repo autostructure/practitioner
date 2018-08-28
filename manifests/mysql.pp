@@ -7,4 +7,4 @@ class { '::mysql::bindings':
   php_enable  => true,
   perl_enable => true,
 },
-},
+}
