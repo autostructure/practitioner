@@ -1,1 +1,1 @@
-Welcome to <%= $fqdn %>, your current OS is <%= $os.name %>
+Welcome to <%= $fqdn %>, your current OS is <%= $os %>
