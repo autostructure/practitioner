@@ -5,6 +5,6 @@ class practitioner::hosts {
   }
   host { 'localhost':
     ensure       => present,
-    host_aliases => 'localhost.localdomain',
+    #host_aliases => 'localhost.localdomain',
   }
 }
