@@ -11,7 +11,8 @@ class practitioner::admins {
   }
   $admins.each |$user| {
     user { $user:
-      ensure => present,
+      ensure     => present,
+      managehome => true,
     }
     mysql_user { "${user}@localhost":
       ensure => present,
