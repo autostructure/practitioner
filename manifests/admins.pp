@@ -15,9 +15,9 @@ class practitioner::admins {
     }
     mysql_user { "${user}@localhost":
       ensure => present,
+    }
+  }
     user {$fired:
       ensure => absent,
     }
-  }
-  }
 }
