@@ -2,7 +2,7 @@
 class practitioner::admins {
   require ::mysql::server
 
-  $fired = 'ralph',
+  $fired = 'ralph'
   $admins = {
     'brad'   => { max_queries_per_hour => '600'},
     'monica' => { max_queries_per_hour => '600'},
