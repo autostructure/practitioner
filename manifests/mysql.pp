@@ -1,7 +1,7 @@
 #blah
 class practitioner::mysql {
   class { '::mysql::server':
-    root_password => 'weakpassword',
+    root_password => 'strongpassword',
 }
   class { '::mysql::bindings':
     php_enable  => true,
